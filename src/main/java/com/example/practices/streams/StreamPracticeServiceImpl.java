@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StreamPracticeServiceImpl {
+public class StreamPracticeServiceImpl implements IStreamPracticeService {
 
   private final IUserService userService;
   private List<UserDto> userList;

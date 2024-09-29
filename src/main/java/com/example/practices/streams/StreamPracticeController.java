@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/practices/streams")
 public class StreamPracticeController {
 
-  private final StreamPracticeServiceImpl streamPracticeService;
+  private final IStreamPracticeService streamPracticeService;
 
   @Autowired
-  public StreamPracticeController(StreamPracticeServiceImpl streamPracticeService) {
+  public StreamPracticeController(IStreamPracticeService streamPracticeService) {
     this.streamPracticeService = streamPracticeService;
   }
 
